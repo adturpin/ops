@@ -3,7 +3,7 @@ all-linux usefull cmd
 
 
 # Kubernetes
-kubectl config set-context --current --namespace=<namespace>
+kubectl config set-context --current --namespace='namespace'
 
 
 # Linux helper
