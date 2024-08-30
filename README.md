@@ -1,5 +1,5 @@
-# ops
-all-linux usefull cmd
+# Ops
+usefull cmd
 
 
 # Kubernetes
