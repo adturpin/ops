@@ -5,7 +5,7 @@ usefull cmd
 # Kubernetes
 kubectl config set-context --current --namespace='namespace'
 
-kubectl set env deployment/<deployment-NAME> --list
+kubectl set env deployment/'deployment-NAME' --list
 
 # Linux helper
 
