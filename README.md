@@ -11,3 +11,6 @@ kubectl set env deployment/'deployment-NAME' --list
 
 ## Sort disk usage by size the bigger last
 du -hs * | sort -h
+
+## decode base64
+echo "stuff the be decode" | base64 --decode
