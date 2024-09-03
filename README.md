@@ -14,3 +14,9 @@ du -hs * | sort -h
 
 ## decode base64
 echo "stuff the be decode" | base64 --decode
+
+## replace place holder in file and replace by env var
+sed -e 's|PLACEHOLDER_1|'"$var_1"'|g' \
+    -e 's|PLACEHOLDER_2|'"$var_2"'|g' \
+    -e 's|PLACEHOLDER_3|'"$var_3"'|g' \
+    input_file_path
