@@ -8,6 +8,14 @@ kubectl config set-context --current --namespace='namespace'
 kubectl set env deployment/'deployment-NAME' --list
 
 # Linux helper
+## List the partition tables
+fdisk -l
+
+## find a filesystem 
+findmnt
+
+## List mount device on boot
+cat /etc/fstab
 
 ## Sort disk usage by size the bigger last
 du -hs * | sort -h
