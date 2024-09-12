@@ -3,9 +3,15 @@ usefull cmd
 
 
 # Kubernetes
+
+## Set default namespace 
 kubectl config set-context --current --namespace='namespace'
 
+## list env var of deployment
 kubectl set env deployment/'deployment-NAME' --list
+
+## Scale deployment 
+kubectl scale deploy my-awesome-deployment --replicas=0
 
 # Linux helper
 ## List the partition tables
