@@ -1,6 +1,8 @@
 # Ops
 usefull cmd
 
+## search in previous cmd
+ctrl+r 
 
 # Kubernetes
 
