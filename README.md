@@ -18,10 +18,17 @@ kubectl scale deploy my-awesome-deployment --replicas=0
 # Linux helper
 
 ## --
-lsblk -l
+lsblk
+
+
 fdisk -l
+
+
 parted -l
+
+
 blkid
+
 
 ## List the partition tables
 fdisk -l
