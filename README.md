@@ -16,6 +16,13 @@ kubectl set env deployment/'deployment-NAME' --list
 kubectl scale deploy my-awesome-deployment --replicas=0
 
 # Linux helper
+
+## --
+lsblk -l
+fdisk -l
+parted -l
+blkid
+
 ## List the partition tables
 fdisk -l
 
