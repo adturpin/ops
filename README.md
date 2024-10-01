@@ -29,6 +29,8 @@ parted -l
 
 blkid
 
+## tester disk 
+https://help.ovhcloud.com/csm/fr-public-cloud-compute-storage-test-disk-speed?id=kb_article_view&sysparm_article=KB0051277
 
 ## List the partition tables
 fdisk -l
