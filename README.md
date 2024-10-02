@@ -26,6 +26,7 @@ iperf3 -c <Server-2-IP>
 
 ## List disks :
 fdisk -l
+
 lsblk
 
 ## For NVME disks, you must install nvme-cli and list the disks :
