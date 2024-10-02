@@ -17,6 +17,13 @@ kubectl scale deploy my-awesome-deployment --replicas=0
 
 # Linux helper
 
+# network
+apt install iperf3
+
+iperf3 -s
+
+iperf3 -c <Server-2-IP>
+
 ## List disks :
 fdisk -l
 lsblk
