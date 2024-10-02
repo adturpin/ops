@@ -17,19 +17,27 @@ kubectl scale deploy my-awesome-deployment --replicas=0
 
 # Linux helper
 
-## --
+## List disks :
+fdisk -l
 lsblk
 
-
-fdisk -l
-
-
+## For NVME disks, you must install nvme-cli and list the disks :
+apt-get install -y nvme-cli
+nvme list
 parted -l
 
+## Retrieve the listing results and adapt the commands below :
+nvme smart-log /dev/nvme0n1
+nvme smart-log /dev/nvme1n1
 
-blkid
+## verify disk status, for each NVME Disk  :
+smartctl -a /dev/nvmeXnX
+smartctl -a /dev/nvmeXnX
 
-## tester disk 
+## verify raid status:
+cat /proc/mdstat
+
+## test disk 
 https://help.ovhcloud.com/csm/fr-public-cloud-compute-storage-test-disk-speed?id=kb_article_view&sysparm_article=KB0051277
 
 ## List the partition tables
