@@ -31,15 +31,19 @@ lsblk
 
 ## For NVME disks, you must install nvme-cli and list the disks :
 apt-get install -y nvme-cli
+
 nvme list
+
 parted -l
 
 ## Retrieve the listing results and adapt the commands below :
 nvme smart-log /dev/nvme0n1
+
 nvme smart-log /dev/nvme1n1
 
 ## verify disk status, for each NVME Disk  :
 smartctl -a /dev/nvmeXnX
+
 smartctl -a /dev/nvmeXnX
 
 ## verify raid status:
