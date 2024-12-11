@@ -15,6 +15,9 @@ kubectl set env deployment/'deployment-NAME' --list
 ## Scale deployment 
 kubectl scale deploy my-awesome-deployment --replicas=0
 
+## Execute code in container
+kubectl exec -it pods/<pod id> -- /bin/bash
+
 # Linux helper
 
 # network
