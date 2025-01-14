@@ -18,6 +18,9 @@ kubectl scale deploy my-awesome-deployment --replicas=0
 ## Execute code in container
 kubectl exec -it pods/<pod id> -- /bin/bash
 
+## copy file from host to container in pod
+kubectl cp -n <namespace> <source> <pod-name>:<path>
+
 # Linux helper
 
 # network
