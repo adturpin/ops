@@ -23,6 +23,9 @@ kubectl cp -n <namespace> <source> <pod-name>:<path>
 
 # Linux helper
 
+# detach cmd form terminal
+nohup <my cmd>
+
 # network
 apt install iperf3
 
